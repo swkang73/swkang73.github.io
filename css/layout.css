@@ -15,6 +15,7 @@
    g. Testimonials Section
    h. Contact Section
    i. Footer
+   j. Others
 
 ===================================================================== */
 
@@ -23,6 +24,36 @@
 /* ------------------------------------------------------------------ */
 
 body { background: #0f0f0f; }
+
+.grey-section {
+  background: #ebebeb;
+}
+.grey-section p.lead {
+  font-family:'librebaskerville-regular', serif;
+  color: #7d7d7d;
+}
+.section-intro {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3.6rem;
+  position: relative;
+}
+.section-intro h1 {
+  font-family: 'opensans-bold', sans-serif;
+  font-size: 3.6rem;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+.section-intro h5 {
+  color: #F06000;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: .4rem;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -187,47 +218,80 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
+  background: #FFFFFF;
+  padding-top: 12rem;
+  padding-bottom: 15rem;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about .section-intro {
+  margin-bottom: 3rem;
+}
 
-#about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
+.intro-info {
+  margin-top: 4.2rem;
+  margin-right: -30px;
+  margin-left: -30px;
 }
-#about p {
-   line-height: 25px;
-   color: #ababab;
+.intro-info img {
+  height: 12rem;
+  width: 12rem;
+  border:1px solid #F06000;
+  border-radius: 50%;
+  margin: 0.9rem 2rem 0 2rem;
+  float: left;
 }
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+.intro-info .lead {
+  text-align: left;
+  padding-left: 13rem;
 }
-#about .contact-details { width: 41.66667%; }
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
+
+.about-content {
+  position: relative;
+  text-align: left;
+  max-width: 850px;
+  margin-bottom: 3.6rem;
 }
-#about .main-col { padding-right: 5%; }
-#about .download .button {
-   margin-top: 6px;
-   background: #444;
+.about-content h3 {
+  font-family: 'opensans-bold', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
 }
-#about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
+.about-content .info-list {
+  list-style: none;
+  margin-left: 0;
 }
-#about .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
+.about-content .info-list li {
+  padding: 0 0 1.5rem 0;
+  margin-bottom: .6rem;
+}
+.about-content .info-list li strong {
+  font-family: 'opensans-bold', sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.about-content .info-list li span {
+  display: block;
+  font-family: 'opensans-bold', sans-serif;
+  color: #888888;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.about-content .skill-bars {
+  margin-top: 6rem;
+}
+
+.button-section {
+  text-align: center;
+}
+.button-section .button {
+  width: 250px;
+}
+.button-section [class*="col-"] .button:first-child {
+  margin-right: 4rem;
 }
 
 
@@ -883,4 +947,85 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+/* ------------------------------------------------------------------ */
+/* j. Others
+/* ------------------------------------------------------------------ */
+
+/**
+ * skillbars - (_skillbars.scss)
+ * -------------------------------------------------------------------
+ */
+.skill-bars {
+  list-style: none;
+  margin: 6rem 0 3rem;
+}
+.skill-bars li {
+  height: .6rem;
+  background: #a1a1a1;
+  width: 100%;
+  margin-bottom: 6rem;
+  padding: 0;
+  position: relative;
+}
+.skill-bars li strong {
+  position: absolute;
+  left: 0;
+  top: -3rem;
+  font-family: "poppins-bold", sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+.skill-bars li .progress {
+  background: #313131;
+  position: relative;
+  height: 100%;
+}
+.skill-bars li .progress span {
+  position: absolute;
+  right: 0;
+  top: -3.6rem;
+  display: block;
+  font-family: "poppins-regular", sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1;
+  background: #313131;
+  padding: .6rem .6rem;
+  border-radius: 3px;
+}
+.skill-bars li .progress span::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -5px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #313131;
+  content: "";
+}
+
+.skill-bars li .percent5   { width: 5%; }
+.skill-bars li .percent10  { width: 10%; }
+.skill-bars li .percent15  { width: 15%; }
+.skill-bars li .percent20  { width: 20%; }
+.skill-bars li .percent25  { width: 25%; }
+.skill-bars li .percent30  { width: 30%; }
+.skill-bars li .percent35  { width: 35%; }
+.skill-bars li .percent40  { width: 40%; }
+.skill-bars li .percent45  { width: 45%; }
+.skill-bars li .percent50  { width: 50%; }
+.skill-bars li .percent55  { width: 55%; }
+.skill-bars li .percent60  { width: 60%; }
+.skill-bars li .percent65  { width: 65%; }
+.skill-bars li .percent70  { width: 70%; }
+.skill-bars li .percent75  { width: 75%; }
+.skill-bars li .percent80  { width: 80%; }
+.skill-bars li .percent85  { width: 85%; }
+.skill-bars li .percent90  { width: 90%; }
+.skill-bars li .percent95  { width: 95%; }
+.skill-bars li .percent100 { width: 100%; }
 
