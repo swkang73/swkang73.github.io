@@ -1313,6 +1313,10 @@
 .fa-arrow-circle-o-right:before {
   content: "\f18e";
 }
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
 .fa-arrow-circle-o-left:before {
   content: "\f190";
 }
