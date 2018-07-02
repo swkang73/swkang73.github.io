@@ -14,7 +14,6 @@
 	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
 	 }, 100);
 
-
 /*----------------------------------------------------*/
 /* Smooth Scrolling
 ------------------------------------------------------ */
@@ -58,7 +57,6 @@
 		offset: '35%'
 
 	});
-
 
 /*----------------------------------------------------*/
 /*	Make sure that #header-background-image height is
@@ -132,6 +130,7 @@
       animationSpeed: 600,
       randomize: false,
    });
+
 
 /*----------------------------------------------------*/
 /*	contact form

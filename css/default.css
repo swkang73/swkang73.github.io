@@ -225,6 +225,88 @@ blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a,
 blockquote cite a:visited { color: #8B9798; border: none }
 
+/** 
+ * ===================================================================
+ * block grids - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+[class*="block-"]:before,
+[class*="block-"]:after {
+	content: "";
+	display: table;
+}
+
+[class*="block-"]:after {
+	clear: both;
+}
+
+.block-1-6 .bgrid {
+	width: 16.66667%;
+}
+
+.block-1-4 .bgrid {
+	width: 25%;
+}
+
+.block-1-3 .bgrid {
+	width: 33.33333%;
+}
+
+.block-1-2 .bgrid {
+	width: 50%;
+}
+
+/**
+ * Clearing for block grid columns. Allow columns with 
+ * different heights to align properly.
+ */
+.block-1-6 .bgrid:nth-child(6n+1),
+.block-1-4 .bgrid:nth-child(4n+1),
+.block-1-3 .bgrid:nth-child(3n+1),
+.block-1-2 .bgrid:nth-child(2n+1) {
+	clear: both;
+}
+
+/**
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+@media screen and (max-width:1024px) {
+	.block-s-1-6 .bgrid {
+		width: 16.66667%;
+	}
+
+	.block-s-1-4 .bgrid {
+		width: 25%;
+	}
+
+	.block-s-1-3 .bgrid {
+		width: 33.33333%;
+	}
+
+	.block-s-1-2 .bgrid {
+		width: 50%;
+	}
+
+	.block-s-full .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="block-s-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.block-s-1-6 .bgrid:nth-child(6n+1),
+	.block-s-1-4 .bgrid:nth-child(4n+1),
+	.block-s-1-3 .bgrid:nth-child(3n+1),
+	.block-s-1-2 .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
 /*

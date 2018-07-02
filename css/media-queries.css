@@ -19,6 +19,16 @@
       margin: 0 auto 12px auto;
    }
 
+   /*Sunwoo added*/
+   .row .row {
+      margin-left: -18px;
+      margin-right: -18px;
+   }
+
+   [class*="col-"] {
+      padding: 0 18px;
+   }
+
 }
 
 /* screenwidth less than 900px
@@ -45,22 +55,234 @@
       font: 11px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
    }
+}
 
+/* screenwidth less than 600px
+--------------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+   .row .row {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+   [class*="col-"] {
+      width: 100% !important;
+      float: none !important;
+      clear: both !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+   }
+
+   [class*="col-"] + [class*="col-"].end {
+      float: none;
+   }
+
+}
 
    /* About Section
    ------------------------------------------------------------------- */
-   #about .profile-pic {
+   /*#about .profile-pic {
       width: 114px;
       height: 114px;
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
-   #about .download { width: 50%; }
+   #about .download { width: 50%; }*/
+   @media only screen and (max-width:1024px) {
+      .intro-info {
+         margin-right: 0;
+         margin-left: 0;
+      }
+   }
+   @media only screen and (max-width:768px) {
+      .intro-info img {
+         height: 7.8rem;
+         width: 7.8rem;
+      }
+      .intro-info .lead {
+         padding-left: 11rem;
+      }
+      .about-content h3 {
+         text-align: center;
+      }
+      .about-content .info-list, .about-content .skill-bars {
+         margin-bottom: 4.2rem;
+      }
+      .button-section .button {
+         width: 100%;
+         margin-bottom: 3rem;
+      }
+      .button-section [class*="col-"] .button:first-child {
+         margin-right: 0;
+      }
+
+      /*Sunwoo Added*/
+      .row {
+         width: auto;
+         padding-left: 30px;
+         padding-right: 30px;
+      }
+
+      .row .row {
+         padding-left: 0;
+         padding-right: 0;
+         margin-left: -15px;
+         margin-right: -15px;
+      }
+
+      [class*="col-"] {
+         padding: 0 15px;
+      }
+
+      .tab-1-4 {
+         width: 25%;
+      }
+
+      .tab-1-3 {
+         width: 33.33333%;
+      }
+
+      .tab-1-2 {
+         width: 50%;
+      }
+
+      .tab-2-3 {
+         width: 66.66667%;
+      }
+
+      .tab-3-4 {
+         width: 75%;
+      }
+
+      .tab-full {
+         width: 100%;
+      }
+   }
+   @media only screen and (max-width:600px) {
+      .intro-info {
+         text-align: center;
+         margin-top: 3rem;
+      }
+      .intro-info img {
+         height: 6.6rem;
+         width: 6.6rem;
+         float: none;
+         display: inline-block;
+      }
+      .intro-info .lead {
+         padding-left: 0;
+         text-align: center;
+      }
+
+      /*Sunwoo added*/
+      .row {
+         padding-left: 25px;
+         padding-right: 25px;
+      }
+
+      .row .row {
+         margin-left: -10px;
+         margin-right: -10px;
+      }
+
+      [class*="col-"] {
+         padding: 0 10px;
+      }
+
+      .mob-1-4 {
+         width: 25%;
+      }
+
+      .mob-1-2 {
+         width: 50%;
+      }
+
+      .mob-3-4 {
+         width: 75%;
+      }
+
+      .mob-full {
+         width: 100%;
+      }
+   }
 
    /* Resume Section
    ------------------------------------------------------------------- */
-   #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #resume .main-col { padding-right: 5%; }   
+   /*#resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
+   #resume .main-col { padding-right: 5%; }*/
+   @media only screen and (max-width:1024px) {
+      #resume .timeline-header {
+         padding-right: 50px;
+      }
+      #resume .timeline-header h3 {
+         font-size: 1.8rem;
+      }
+      #resume .timeline-header p {
+         font-size: 1.4rem;
+      }
+      #resume .timeline-content {
+         padding-left: 50px;
+      }
+   }
+   @media only screen and (max-width:768px) {
+      #resume .timeline-wrap::before {
+         left: 2.4rem;
+      }
+      #resume .timeline-ico {
+         left: 2.4rem;
+      }
+      #resume .timeline-header {
+         float: none;
+         width: auto;
+         padding-right: 15px;
+         text-align: left;
+      }
+      #resume .timeline-header h3 {
+         font-size: 2rem;
+      }
+      #resume .timeline-header p {
+         font-size: 1.5rem;
+         margin-bottom: 1.5rem;
+      }
+      #resume .timeline-content {
+         margin: 0;
+      }
+      #resume .timeline-content h4 {
+         padding-bottom: 0;
+         padding-top: 2.1rem;
+         margin-bottom: .6rem;
+         font-size: 1.7rem;
+      }
+      #resume .timeline-content h4::after {
+         bottom: auto;
+         top: 0;
+      }
+      #resume .timeline-header, #resume .timeline-content {
+         padding-left: 7rem;
+      }
+   }
+   @media only screen and (max-width:480px) {
+      #resume .resume-header h2 {
+         font-size: 2.2rem;
+      }
+      #resume .timeline-wrap::before {
+         left: 1.8rem;
+      }
+      #resume .timeline-ico {
+         height: 3.6rem;
+         width: 3.6rem;
+         line-height: 3.6rem;
+         left: 1.8rem;
+         margin-left: -1.8rem;
+         font-size: 1.5rem;
+      }
+      #resume .timeline-header, #resume .timeline-content {
+         padding-left: 5.5rem;
+      }
+   }   
 
    /* Testimonials Section
    ------------------------------------------------------------------- */

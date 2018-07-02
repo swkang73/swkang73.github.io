@@ -11,8 +11,8 @@
    c. About Section
    d. Resume Section
    e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
+   f. Activities
+   g. Stats
    h. Contact Section
    i. Footer
    j. Others
@@ -240,7 +240,7 @@ ul#nav li.current a { color: #F06000; }
   width: 12rem;
   border:1px solid #F06000;
   border-radius: 50%;
-  margin: 0.9rem 2rem 0 2rem;
+  margin: 0.9rem 1rem 0 2rem;
   float: left;
 }
 .intro-info .lead {
@@ -302,51 +302,6 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
-/*
-#resume {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
-}
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
-
-#resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#resume h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
-#resume h3 {
-   font: 25px/40px 'opensans-bold', sans-serif;
-}
-
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
-
-.education, .work {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
-}
-#resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
-}
-#resume .info span {
-   margin-right: 5px;
-   margin-left: 5px;
-}
-#resume .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
-}*/
 
 #resume .section-intro h1 {
   color: black;
@@ -363,7 +318,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #resume .resume-header h2 {
-  color: #11ABB0
+  color: #F06000
 }
 
 #resume .resume-timeline {
@@ -652,12 +607,7 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   text-align: center;
-   margin-bottom: 48px;
-   color: #95A3A3;
+   color: black;
 }
 
 /* Portfolio Content */
@@ -899,11 +849,187 @@ ul#nav li.current a { color: #F06000; }
     cursor: default;
 }
 
+/** 
+ * ===================================================================
+ * f. activities - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+#activities {
+  background: black url(../images/bg.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  color: white;
+  position: relative;
+}
+#activities .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #151515;
+  opacity: .9;
+}
+
+#activities .section-intro {
+  margin-bottom: 1.8rem;
+}
+
+#activities .section-intro h1 {
+  color: white;
+}
+
+#activities .section-intro p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#activities .activities-content {
+  max-width: 1200px;
+}
+
+.activity {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+}
+
+#activities h3 {
+  color: #11ABB0;
+  text-align: center;
+}
+
+#activities .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+   text-align: center;
+}
+#activities .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#activities .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+#activities p {
+  text-align: center;
+}
+
+
+/** 
+ * ===================================================================
+ * g. stats - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+#stats {
+  background: #11ABB0;
+  padding-top: 7.2rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+#stats .row {
+  max-width: 1440px;
+}
+#stats .stat {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  min-height: 17.4rem;
+}
+#stats .stat:first-child {
+  border: none;
+}
+#stats .icon-part i {
+  font-size: 4.8rem;
+  color: #000000;
+}
+#stats .stat-count {
+  color: #FFFFFF;
+  font-size: 3.6rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  font-family: "poppins-medium", sans-serif;
+  color: white;
+}
+#stats .stat-title {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/**
+ * responsive:
+ * stats
+ * -------------------------------------------------------------------
+ */
+@media only screen and (max-width:1024px) {
+  #stats .stat:nth-child(n) {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 1.5rem;
+  }
+  #stats .stat:nth-child(3n+1) {
+    border: none;
+  }
+}
+@media only screen and (max-width:768px) {
+  #stats .stat:nth-child(n) {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  #stats .stat:nth-child(2n+1) {
+    border: none;
+  }
+}
+@media only screen and (max-width:600px) {
+  #stats .stat:nth-child(n) {
+    border: none;
+  }
+}
+
+
+
 /* ------------------------------------------------------------------ */
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
+  background: #151515;
+  padding-top: 12rem;
+  padding-bottom: 7.2rem;
+}
+#contact .section-intro h1 {
+  color: white;
+}
+#contact .section-intro h5 {
+  color: #F06000;
+}
+#contact .section-intro p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-info {
+  margin: 4.8rem auto 0;
+  font-family: "poppins-regular", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact-info .collapse {
+  padding: 0;
+}
+.contact-info .icon {
+  margin-bottom: 2.1rem;
+}
+.contact-info .icon i {
+  font-size: 4.2rem;
+  color: #FFFFFF;
+}
+.contact-info h5 {
+  color: #F06000;
+}
+
+/*#contact {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
@@ -942,98 +1068,8 @@ ul#nav li.current a { color: #F06000; }
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#contact .header-col { padding-top: 6px; }*/
 
-
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
-   font: 15px/24px 'opensans-bold', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-	display: inline-block;
-	float: left;
-   width: 26%;
-}
-#contact input,
-#contact textarea,
-#contact select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
-	margin-bottom: 42px;
-	border: 0;
-	outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
-}
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
-	color: #fff;
-	background-color: #11ABB0;
-}
-#contact button.submit {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
-	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
-	border-radius: 3px;
-   margin-left: 26%;
-}
-#contact button.submit:hover {
-	color: #0D0D0D;
-	background: #fff;
-}
-#contact span.required {
-	color: #11ABB0;
-	font-size: 13px;
-}
-#message-warning, #message-success {
-   display: none;
-	background: #0F0F0F;
-	padding: 24px 24px;
-	margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
-}
-#message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
-
-#message-warning i,
-#message-success i {
-   margin-right: 10px;
-}
-#image-loader {
-   display: none;
-   position: relative;
-   left: 18px;
-   top: 17px;
-}
-
-
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
 
 
 /* ------------------------------------------------------------------ */
