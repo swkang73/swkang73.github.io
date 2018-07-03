@@ -851,7 +851,7 @@ ul#nav li.current a { color: #F06000; }
 
 /** 
  * ===================================================================
- * f. activities - (_layout.scss)
+ * f. Activities - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -897,7 +897,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #activities h3 {
-  color: #11ABB0;
+  color: #F06000;
   text-align: center;
 }
 
