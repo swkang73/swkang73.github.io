@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Style Guide - Calvin</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style type="text/css" media="screen">
+        .s-styles {
+            padding-bottom: var(--vspace-4);
+        }
+        .s-styles > .row {
+            max-width: var(--width-max);
+        }
+        .s-styles .intro h1 {
+            margin-top: 0;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--opaque">
+
+        <div class="s-header__logo">
+            <a class="logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Categories</a>
+                        <ul class="sub-menu">
+                            <li><a href="category.html">Design</a></li>
+                            <li><a href="category.html">Lifestyle</a></li>
+                            <li><a href="category.html">Photography</a></li>
+                            <li><a href="category.html">Vacation</a></li>
+                            <li><a href="category.html">Work</a></li>
+                            <li><a href="category.html">Health</a></li>
+                            <li><a href="category.html">Family</a></li>
+                            <li><a href="category.html">Relationship</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#0" title="">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="single-video.html">Video Post</a></li>
+                            <li><a href="single-audio.html">Audio Post</a></li>
+                            <li><a href="single-standard.html">Standard Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="styles.html" title="">Styles</a></li>
+                    <li><a href="about.html" title="">About</a></li>
+                    <li><a href="contact.html" title="">Contact</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+        <div class="s-header__search">
+
+            <div class="s-header__search-inner">
+                <div class="row wide">
+
+                    <form role="search" method="get" class="s-header__search-form" action="#">
+                        <label>
+                            <span class="h-screen-reader-text">Search for:</span>
+                            <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="s-header__search-submit" value="Search"> 
+                    </form>
+
+                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
+
+                </div> <!-- end row -->
+            </div> <!-- s-header__search-inner -->
+
+        </div> <!-- end s-header__search wrap -->	
+
+        <a class="s-header__search-trigger" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.982 17.983"><path fill="#010101" d="M12.622 13.611l-.209.163A7.607 7.607 0 017.7 15.399C3.454 15.399 0 11.945 0 7.7 0 3.454 3.454 0 7.7 0c4.245 0 7.699 3.454 7.699 7.7a7.613 7.613 0 01-1.626 4.714l-.163.209 4.372 4.371-.989.989-4.371-4.372zM7.7 1.399a6.307 6.307 0 00-6.3 6.3A6.307 6.307 0 007.7 14c3.473 0 6.3-2.827 6.3-6.3a6.308 6.308 0 00-6.3-6.301z"/></svg>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content">
+
+        <section class="s-styles">
+            
+            <div class="row">
+
+                <div class="column large-12 intro">
+
+                    <h1>Style Guide.</h1>
+
+                    <p class="lead">Lorem ipsum Officia elit ad tempor dolore est ex incididunt incididunt occaecat culpa deserunt 
+                    sunt labore in cillum ullamco magna in Excepteur consequat in reprehenderit proident mollit incididunt officia commodo.
+                    Duis ea officia sed dolor pariatur enim dolore dolore quis incididunt nulla exercitation commodo veniam et ea incididunt.
+                    </p>
+
+                    <!-- <hr class="fancy"> -->
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+
+                    <h3>Paragraph and Image</h3>
+
+                    <p><a href="#"><img width="120" height="120" class="h-pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.Cras id urna. Morbi 
+                    tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, 
+                    purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. 
+                    Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id 
+                    neque posuere nunc justo tempus leo. </p>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. 
+                    Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. 
+                    Donec mattis, purus nec placerat bibendum, dui pede condimentumodio, ac blandit ante orci ut diam.	
+                    </p>
+
+                    <p>A <a href="#">link</a>,
+                    <abbr title="this really isn't a very good description">abbrebation</abbr>,
+                    <strong>strong text</strong>,
+                    <em>em text</em>,
+                    <del>deleted text</del>, and
+                    <mark>this is a mark text.</mark>
+                    <code>.code</code>
+                    </p>
+
+                </div>
+
+                <div class="column large-6 tab-12">
+
+                    <h3>Drop Caps</h3>
+
+                    <p class="drop-cap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                    Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the 
+                    necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, 
+                    euposuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, 
+                    ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, 
+                    lorem tellus eleifend magna, eget fringilla velit magna id neque.
+                    </p>
+
+                    <h3>Small Print</h3>
+
+                    <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero.</small></p>
+                    
+                    
+
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Pull Quotes</h3>
+
+                    <p>
+                    Perspiciatis nemo unde et nobis modi consequatur officia amet. Ut enim 
+                    tenetur provident maiores. Perspiciatis asperiores incidunt sequi 
+                    quisquam. Enim aut. 
+                    </p>
+
+                    <figure class="pull-quote">
+                        <blockquote>
+                            <p>
+                            When you look in the eyes of grace, when you meet grace, 
+                            when you embrace grace, when you see the nail prints in 
+                            grace’s hands and the fire in his eyes, when you feel his 
+                            relentless love for you - it will not motivate you to sin. 
+                            It will motivate you to righteousness.
+                            </p>
+
+                            <footer>
+                                <cite>Judah Smith</cite>
+                            </footer>
+                        </blockquote>
+                    </figure>
+
+
+                </div>
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Block Quotes</h3>
+
+                    <blockquote cite="http://where-i-got-my-info-from.com">
+                        <p>
+                        For God so loved the world, that he gave his only Son, that whoever believes in 
+                        him should not perish but have eternal life. For God did not send his Son into 
+                        the world to condemn the world, but in order that the world might be 
+                        saved through him.
+                        </p>
+
+                        <footer>
+                            <cite>
+                                <a href="#0">John 3:16-17 ESV</a>
+                            </cite>
+                        </footer>
+
+                    </blockquote>
+
+                    <blockquote>
+                        <p>There is a God-shaped vacuum in the heart of each man which cannot be satisfied 
+                        by any created thing but only by God the Creator.</p>
+
+                        <footer>
+                            <cite>Blaise Pascal</cite>
+                        </footer>
+
+                    </blockquote>
+
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+
+                    <h3>Example Lists</h3>
+
+                    <ol>
+                        <li>Here is an example</li>
+                        <li>of an ordered list.</li>
+                        <li>A parent list item.
+                            <ul>
+                                <li>one</li>
+                                <li>two</li>
+                                <li>three</li>
+                            </ul>
+                            </li>
+                            <li>A list item.</li>
+                        </ol>
+
+                    <ul class="disc">
+                        <li>Here is an example</li>
+                        <li>of an unordered list.</li>
+                    </ul>
+
+                    <h3>Definition Lists</h3>
+
+                    <h5>a) Multi-line Definitions (default) </h5>
+
+                    <dl class="dictionary-style">
+                        <dt><strong>This is a term</strong></dt>
+                            <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+                        <dt><strong>Another Term</strong></dt>
+                            <dd>And it gets a definition too, which is this line</dd>
+                            <dd>This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.</dd>
+                    </dl>
+
+                    <h3 class="h-add-bottom">Skill Bars</h3>
+
+                    <ul class="skill-bars">
+                        <li>
+                        <div class="progress percent90"><span>90%</span></div>
+                        <strong>HTML</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent85"><span>85%</span></div>
+                        <strong>CSS</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>Javascript</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent95"><span>95%</span></div>
+                        <strong>PHP</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent75"><span>75%</span></div>
+                        <strong>Wordpress</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent90"><span>90%</span></div>
+                        <strong>Node JS</strong>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Buttons</h3>
+
+                    <p>
+                        <a class="btn btn--primary h-full-width" href="#0">Primary Button</a>
+                        <a class="btn h-full-width" href="#0">Default Button</a>
+                        <a class="btn btn--stroke h-full-width" href="#0">Stroke Button</a>
+                    </p>
+
+                    <h3>Stats Tabs</h3>
+
+                    <ul class="stats-tabs">
+                        <li><a href="#0">1,234 <em>Peter</em></a></li>
+                        <li><a href="#0">567 <em>James</em></a></li>
+                        <li><a href="#0">23,456 <em>John</em></a></li>
+                        <li><a href="#0">3,456 <em>Andrew</em></a></li>
+                        <li><a href="#0">456 <em>Philip</em></a></li>
+                        <li><a href="#0">26 <em>Matthew</em></a></li>
+                    </ul>
+
+                    <h3 class="h-add-bottom">Code</h3>
+
+<pre><code class="language-css">
+    code {
+    font-size: 1.4rem;
+    margin: 0 .2rem;
+    padding: .2rem .6rem;
+    white-space: nowrap;
+    background: #F1F1F1;
+    border: 1px solid #E1E1E1;	
+    border-radius: 3px;
+    }
+</code></pre>
+
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+                        
+                    <h1>H1 Heading.</h1>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+
+                    <h2>H2 Heading.</h2>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+
+                    <h3>H3 Heading.</h3>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+
+                    
+                </div>
+
+                <div class="column large-6 tab-12">
+                    <h4>H4 Heading.</h4>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+
+                    <h5>H5 Heading.</h5>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+
+                    <h6>H6 Heading.</h6>
+                    <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
+                    Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
+        
+                    
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Responsive Image</h3>
+
+                    <figure>
+                        <img src="images/sample-525.jpg" 
+                            srcset="images/sample-1050.jpg 1050w, 
+                                    images/samaple-525.jpg 525w" 
+                            sizes="(max-width: 1050px) 100vw, 1050px" alt="">
+
+                        <figcaption>
+                            Here is some random picture.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Responsive video</h3>
+
+                    <div class="video-container">
+                    <iframe src="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+                    </div>
+
+                </div>
+                
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-12">
+
+                    <h3>Tables</h3>
+                    <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+
+                    <div class="table-responsive">
+
+                        <table>
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Sex</th>
+                                    <th>Location</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>William J. Seymour</td>
+                                    <td>34</td>
+                                    <td>Male</td>
+                                    <td>Azusa Street</td>
+                                </tr>
+                                <tr>
+                                    <td>Jennie Evans Moore</td>
+                                    <td>30</td>
+                                    <td>Female</td>
+                                    <td>Azusa Street</td>
+                                </tr>
+                                </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-12">
+                    <h3>Pagination</h3>
+
+                    <nav class="pgn">
+                        <ul>
+                            <li>
+                                <span class="pgn__prev" href="#0">
+                                    Prev
+                                </span>
+                            </li>
+                            <li><a class="pgn__num" href="#0">1</a></li>
+                            <li><span class="pgn__num current">2</span></li>
+                            <li><a class="pgn__num" href="#0">3</a></li>
+                            <li><a class="pgn__num" href="#0">4</a></li>
+                            <li><a class="pgn__num" href="#0">5</a></li>
+                            <li><span class="pgn__num dots">…</span></li>
+                            <li><a class="pgn__num" href="#0">8</a></li>
+                            <li>
+                                <span class="pgn__next" href="#0">
+                                    Next
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="column large-6 tab-12">
+
+                    <h3 class="h-add-bottom">Form Styles</h3>
+
+                    <form>
+                        <div>
+                            <label for="sampleInput">Your email</label>
+                            <input class="h-full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                        </div>
+                        <div>
+                            <label for="sampleRecipientInput">Reason for contacting</label>
+                            <div class="ss-custom-select">
+                                <select class="h-full-width" id="sampleRecipientInput">
+                                    <option value="Option 1">Questions</option>
+                                    <option value="Option 2">Report</option>
+                                    <option value="Option 3">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <label for="exampleMessage">Message</label>
+                        <textarea class="h-full-width" placeholder="Your message" id="exampleMessage"></textarea>
+
+                        <label class="h-add-bottom">
+                            <input type="checkbox">
+                            <span class="label-text">Send a copy to yourself</span>
+                        </label>
+                    
+                        <input class="btn--primary h-full-width" type="submit" value="Submit">
+                    </form>
+
+                </div>
+
+                <div class="column large-6 tab-12">
+
+                    <h3>Alert Boxes</h3>
+
+                    <br>
+                    
+                    <div class="alert-box alert-box--error">
+                        <p>Error Message. Your Message Goes Here.</p>
+                        <span class="alert-box__close"></span>
+                    </div><!-- end error -->
+                            
+                    <div class="alert-box alert-box--success">
+                        <p>Success Message. Your Message Goes Here.</p>
+                        <span class="alert-box__close"></span>
+                    </div><!-- end success -->
+                            
+                    <div class="alert-box alert-box--info">
+                        <p>Info Message. Your Message Goes Here.</p>
+                        <span class="alert-box__close"></span>
+                    </div><!-- end info -->
+                            
+                    <div class="alert-box alert-box--notice">
+                        <p>Notice Message. Your Message Goes Here.</p>
+                        <span class="alert-box__close"></span>
+                    </div><!-- end notice -->
+                
+                </div>
+
+            </div> <!-- end row -->
+
+            <div class="row">
+
+                <div class="large-12 column">
+                <h3 class="half-bottom">Grid Columns</h3>
+                </div>
+    
+            </div> <!-- Row End-->
+    
+            <!--<h4>1/3 Columns</h4>  -->
+    
+            <div class="row">
+    
+                <div class="large-4 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-4 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-4 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+            </div>
+    
+            <!--<h4>1/4 Columns</h4>  -->
+    
+            <div class="row">
+    
+                <div class="large-3 tab-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-3 tab-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-3 tab-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-3 tab-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+            </div>
+    
+            <!--<h4>1/2 Columns</h4>  -->
+    
+            <div class="row">
+    
+                <div class="large-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+                <div class="large-6 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+            </div>
+    
+            <!--<h4>2/3 Columns</h4>  -->
+    
+            <div class="row">
+    
+                <div class="large-8 tab-7 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor.
+                    </p>
+                </div>
+    
+                <div class="large-4 tab-5 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. 
+                    </p>
+                </div>
+    
+            </div>
+    
+            <!--<h4>3/4 Columns</h4>  -->
+    
+            <div class="row">
+    
+                <div class="large-3 tab-5 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at. 
+                    </p>
+                </div>
+    
+                <div class="large-9 tab-7 mob-12 column">
+                    <p>
+                    Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor.Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+                    nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+                    faucibus at, tincidunt eget, porttitor non, dolor.
+                    </p>
+                </div>
+    
+            </div> 
+
+        </section> <!-- end s-styles -->
+
+    </section> <!-- end s-content -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+
+            <div class="row">
+
+                <div class="column large-3 medium-6 tab-12 s-footer__info">
+
+                    <h5>About Our Site</h5>
+
+                    <p>
+                    Lorem ipsum Ut velit dolor Ut labore id fugiat in ut 
+                    fugiat nostrud qui in dolore commodo eu magna Duis 
+                    cillum dolor officia esse mollit proident Excepteur 
+                    exercitation nulla. Lorem ipsum In reprehenderit 
+                    commodo aliqua irure.
+                    </p>
+
+                </div> <!-- end s-footer__info -->
+
+                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
+
+                    <h5>Site Links</h5>
+
+                    <ul>
+                        <li><a href="#0">About Us</a></li>
+                        <li><a href="#0">Blog</a></li>
+                        <li><a href="#0">FAQ</a></li>
+                        <li><a href="#0">Terms</a></li>
+                        <li><a href="#0">Privacy Policy</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__site-links -->  
+
+                <div class="column large-2 medium-3 tab-6 s-footer__social-links">
+
+                    <h5>Follow Us</h5>
+
+                    <ul>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="#0">Facebook</a></li>
+                        <li><a href="#0">Dribbble</a></li>
+                        <li><a href="#0">Pinterest</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__social links --> 
+
+                <div class="column large-3 medium-6 tab-12 s-footer__subscribe">
+
+                    <h5>Sign Up for Newsletter</h5>
+
+                    <p>Signup to get updates on articles, interviews and events.</p>
+
+                    <div class="subscribe-form">
+                
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Your Email Address" required=""> 
+                
+                            <input type="submit" name="subscribe" value="subscribe" >
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
+
+                    </div>
+
+                </div> <!-- end s-footer__subscribe -->
+
+            </div> <!-- end row -->
+
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright Calvin 2020</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
