@@ -1,497 +1,1001 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>(주)원스드림</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Sunwoo's Personal Website</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- CSS
+	<!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="apple-touch-icon.png" >
-    <link rel="manifest" href="site.webmanifest">
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
 
-<body id="top">
+<body>
 
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader"> 
-    	<div id="loader"></div>
-    </div>
+      <nav id="nav-wrap">
 
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#activities">Activities</a></li>
+            <li><a class="smoothscroll" href="#stats">Statistics</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
 
-        <div class="s-header__logo">
-            <a class="logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
-            </a>
-        </div>
+      </nav> <!-- end #nav-wrap -->
 
-        <div class="row s-header__navigation">
-
-            <nav class="s-header__nav-wrap">
-
-                <h3 class="s-header__nav-heading h6">Navigate to</h3>
-
-                <ul class="s-header__nav">
-                    <li class="current"><a href="index.html" title="">홈</a></li>
-<!--                     <li class="has-children">
-                        <a href="#0" title="">Categories</a>
-                        <ul class="sub-menu">
-                            <li><a href="category.html">Design</a></li>
-                            <li><a href="category.html">Lifestyle</a></li>
-                            <li><a href="category.html">Photography</a></li>
-                            <li><a href="category.html">Vacation</a></li>
-                            <li><a href="category.html">Work</a></li>
-                            <li><a href="category.html">Health</a></li>
-                            <li><a href="category.html">Family</a></li>
-                            <li><a href="category.html">Relationship</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-children">
-                        <a href="#0" title="">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="single-video.html">Video Post</a></li>
-                            <li><a href="single-audio.html">Audio Post</a></li>
-                            <li><a href="single-standard.html">Standard Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="styles.html" title="">Styles</a></li> -->
-                    <li><a href="about.html" title="">인사말</a></li>
-                    <li><a href="contact.html" title="">연락처</a></li>
-                </ul> <!-- end s-header__nav -->
-
-                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
-
-            </nav> <!-- end s-header__nav-wrap -->
-
-        </div> <!-- end s-header__navigation -->
-
-        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
-
-        <!-- TO DO: Implement search for future-->
-        <!-- <div class="s-header__search">
-
-            <div class="s-header__search-inner">
-                <div class="row wide">
-
-                    <form role="search" method="get" class="s-header__search-form" action="#">
-                        <label>
-                            <span class="h-screen-reader-text">Search for:</span>
-                            <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="s-header__search-submit" value="Search"> 
-                    </form>
-
-                    <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
-
-                </div> <-- end row -->
-            <!-- </div> <-- s-header__search-inner -->
-
-        <!--</div> <-- end s-header__search wrap -->	
- 
-        <!-- <a class="s-header__search-trigger" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.982 17.983"><path fill="#010101" d="M12.622 13.611l-.209.163A7.607 7.607 0 017.7 15.399C3.454 15.399 0 11.945 0 7.7 0 3.454 3.454 0 7.7 0c4.245 0 7.699 3.454 7.699 7.7a7.613 7.613 0 01-1.626 4.714l-.163.209 4.372 4.371-.989.989-4.371-4.372zM7.7 1.399a6.307 6.307 0 00-6.3 6.3A6.307 6.307 0 007.7 14c3.473 0 6.3-2.827 6.3-6.3a6.308 6.308 0 00-6.3-6.301z"/></svg>
-        </a> -->
-
-    </header> <!-- end s-header -->
-
-
-    <!-- hero
-    ================================================== -->
-    <section id="hero" class="s-hero">
-
-        <div class="s-hero__slider">
-
-            <div class="s-hero__slide">
-
-                <div class="s-hero__slide-bg" style="background-image: url('images/slide1.jpg');"></div>
-
-                <div class="row s-hero__slide-content animate-this">
-                    <div class="column">
-                        <div class="s-hero__slide-meta">
-                            <span class="byline"> 
-                                청소년 진로코칭 플랫폼
-                            </span>
-                        </div>
-                        <h1 class="s-hero__slide-text">
-                            <a href="#0">
-                                One's Dream
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-
-            </div> <!-- end s-hero__slide -->
-
-            <div class="s-hero__slide">
-
-                <div class="s-hero__slide-bg" style="background-image: url('images/slide2.jpg');"></div>
-
-                <div class="row s-hero__slide-content animate-this">
-                    <div class="column">
-                        <div class="s-hero__slide-meta">
-                            <span class="byline"> 
-                                레전드 진학케어 매칭 플랫폼
-                            </span>
-                        </div>
-                        <h1 class="s-hero__slide-text">
-                            <a href="#0">
-                                One's Dream
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-
-
-            </div> <!-- end s-hero__slide -->
-
-            <div class="s-hero__slide">
-
-                <div class="s-hero__slide-bg" style="background-image: url('images/slide3.jpg');"></div>
-
-                <div class="row s-hero__slide-content animate-this">
-                    <div class="column">
-                        <div class="s-hero__slide-meta">
-                            <span class="byline"> 
-                                진로상담 진학케어 입시준비 올인원
-                            </span>
-                        </div>
-                        <h1 class="s-hero__slide-text">
-                            <a href="#0">
-                                One's Dream
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-
-
-            </div> <!-- end s-hero__slide -->
-        </div> <!-- end s-hero__slider -->
-
-        <!-- TODO: implement social SNS marketing -->
-
-        <!-- <div class="s-hero__social hide-on-mobile-small">
-            <p>Follow</p>
-            <span></span>
-            <ul class="s-hero__social-icons">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Sunwoo Kang</h1>
+            <h3> <span>Data Analyst</span> | <span>Software Engineer</span> | <span>Founder</span></h3>
+            <h3><span>background pc: Himalayas by Sunwoo Kang<span></h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://github.com/swkang73"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/sunwoo-kang-730/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="mailto:swkang73@stanford.edu"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://join.skype.com/invite/QjGfYjfvQS1t"><i class="fa fa-skype"></i></a></li>
             </ul>
-        </div> <-- end s-hero__social -->
+         </div>
+      </div>
 
-        <div class="nav-arrows s-hero__nav-arrows">
-            <button class="s-hero__arrow-prev">
-                <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path></svg>
-            </button>
-            <button class="s-hero__arrow-next">
-               <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"></path></svg>
-            </button>
-        </div> <!-- end s-hero__arrows -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-    </section> <!-- end s-hero -->
+   </header> <!-- Header End -->
 
 
-    <!-- content
-    ================================================== -->
-    <section class="s-content s-content--no-top-padding">
+<!-- about section
+   ================================================== -->
+   <section id="about">  
 
-        <div class="row section-intro">
-            <div class="column large-12">
+      <div class="row section-intro">
+         <div class="col-twelve">
 
-            <h1>레전드 케어팀</h1>
+            <h5>About</h5>
+            <h1>Let me introduce myself.</h1>
 
-            </div>         
-        </div> 
+            <div class="intro-info">
 
+               <img src="images/profilepic.jpg" alt="Profile Picture">
 
+               <p class="lead">I'm a Stanford class of 2020 undergraduate majoring in Biomedical Computation, and masters in Computer Science AI Track. My primary interest lies in using computation and visualization of computer programming to solve challenges in precision health.</p>
+            </div>            
 
-        <!-- masonry
-        ================================================== -->
-        <div class="s-bricks">
+         </div>         
+      </div> <!-- /section-intro -->
 
-            <div class="masonry">
-                <div class="bricks-wrapper h-group">
+      <div class="row about-content">
 
-                    <div class="grid-sizer"></div>
+         <div class="col-six tab-full">
 
-                    <div class="lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <h3>Profile</h3>
+            <p>Currently, I'm seeking a full time software engineering/data analyst position in bay area (US). If you think I'm a good fit, please contant me via <a href="mailto:swkang73@stanford.edu">swkang73@stanford.edu</a>.</p>
 
-                    <article class="brick entry" data-aos="fade-up">
-    
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="thumb-link">
-                                <img src="images/avatars/user-01.jpg" alt="">
-                            </a>
-                        </div> <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h1 class="entry__title"><a href="https://www.dreamhost.com/r.cgi?287326">김제니 선생님</a></h1>
-                                
-                                <div class="entry__meta">
-                                    <span class="byline">대표분야:
-                                        <span class='author'>
-                                            생물, 국내진학 
-                                    </span>
-                                </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                짧은이력 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" a href="contact.html">매칭 신청</a>
-                        </div> <!-- end entry__text -->
-                    
-                    </article> <!-- end article -->
+            <ul class="info-list">
+               <li>
+                  <strong>Fullname:</strong>
+                  <span>Sunwoo Kang</span>
+               </li>
+               <li>
+                  <strong>Birth Date:</strong>
+                  <span>July 30, 1997</span>
+               </li>
+               <li>
+                  <strong>Email:</strong>
+                  <span>swkang73@stanford.edu</span>
+               </li>
 
-                    <article class="brick entry" data-aos="fade-up">
-        
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="thumb-link">
-                                <img src="images/avatars/user-02.jpg" alt="">
-                            </a>
-                        </div> <!-- end entry__thumb -->
-        
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h1 class="entry__title"><a href="https://www.dreamhost.com/r.cgi?287326">김로제 선생님</a></h1>
-                                
-                                <div class="entry__meta">
-                                    <span class="byline">대표분야:
-                                        <span class='author'>
-                                            생물, 국내진학 
-                                    </span>
-                                </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                짧은이력 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" a href="contact.html">매칭 신청</a>
-                        </div> <!-- end entry__text -->
-        
-                    </article> <!-- end entry -->
-    
-                    <article class="brick entry" data-aos="fade-up">
-    
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="thumb-link">
-                                <img src="images/avatars/user-03.jpg" alt="">
-                            </a>
-                        </div>  <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h1 class="entry__title"><a href="https://www.dreamhost.com/r.cgi?287326">김아무개 선생님</a></h1>
-                                
-                                <div class="entry__meta">
-                                    <span class="byline">대표분야:
-                                        <span class='author'>
-                                            생물, 국내진학 
-                                    </span>
-                                </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                짧은이력 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" a href="contact.html">매칭 신청</a>
-                        </div> <!-- end entry__text -->
-                    
-                    </article> <!-- end article -->
+            </ul> <!-- /info-list -->
 
-                    <article class="brick entry" data-aos="fade-up">
-    
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="thumb-link">
-                                <img src="images/avatars/user-04.jpg" alt="">
-                            </a>
-                        </div>  <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h1 class="entry__title"><a href="https://www.dreamhost.com/r.cgi?287326">김아무개 선생님</a></h1>
-                                
-                                <div class="entry__meta">
-                                    <span class="byline">대표분야:
-                                        <span class='author'>
-                                            생물, 국내진학 
-                                    </span>
-                                </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                짧은이력 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" a href="contact.html">매칭 신청</a>
-                        </div> <!-- end entry__text -->
-                    
-                    </article> <!-- end article -->
+         </div>
 
-                    <article class="brick entry" data-aos="fade-up">
-    
-                        <div class="entry__thumb">
-                            <a href="single-standard.html" class="thumb-link">
-                                <img src="images/avatars/user-05.jpg" alt="">
-                            </a>
-                        </div>  <!-- end entry__thumb -->
-    
-                        <div class="entry__text">
-                            <div class="entry__header">
-                                <h1 class="entry__title"><a href="https://www.dreamhost.com/r.cgi?287326">김아무개 선생님</a></h1>
-                                
-                                <div class="entry__meta">
-                                    <span class="byline">대표분야:
-                                        <span class='author'>
-                                            생물, 국내진학 
-                                    </span>
-                                </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="entry__excerpt">
-                                <p>
-                                짧은이력 
-                                </p>
-                            </div>
-                            <a class="entry__more-link" a href="contact.html">매칭 신청</a>
-                        </div> <!-- end entry__text -->
-                    
-                    </article> <!-- end article -->
+         <div class="col-six tab-full">
+
+            <h3>Skills</h3>
+            <p>I'm an independent teamworker strong in research and coding. My areas of expertise are bioinformatics, genetics, and computer science. Below are highlights of my technical skills:</p>
+
+            <ul class="skill-bars">
+               <li>
+                  <div class="progress percent90"><span>90%</span></div>
+                  <strong>MS Suite</strong>
+               </li>
+               <li>
+                  <div class="progress percent90"><span>90%</span></div>
+                  <strong>Python</strong>
+               </li>
+               <li>
+                  <div class="progress percent60"><span>60%</span></div>
+                  <strong>C/C++</strong>
+               </li>
+               <li>
+                  <div class="progress percent60"><span>60%</span></div>
+                  <strong>Java</strong>
+               </li>
+               <li>
+                  <div class="progress percent70"><span>70%</span></div>
+                  <strong>JS/CSS/HTML</strong>
+               </li>
+               
+      
+            </ul> <!-- /skill-bars -->    
+
+         </div>
+
+      </div>
+
+      <div class="row button-section">
+         <div class="col-twelve">
+            <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+            <a href="files/resume2018.pdf" title="Download CV" class="button button-primary">Download CV</a>
+         </div>         
+      </div>
+   </section> <!-- /process-->    
 
 
-                </div> <!-- end brick-wrapper -->
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
 
-            </div> <!-- end masonry -->
+      <div class="row section-intro">
+         <div class="col-twelve">
 
-            <div class="row">
-                <div class="column large-12">
-                    <nav class="pgn">
-                        <ul>
-                            <li>
-                                <span class="pgn__prev" href="#0">
-                                    Prev
-                                </span>
-                            </li>
-                            <li><a class="pgn__num" href="#0">1</a></li>
-                            <li><span class="pgn__num current">2</span></li>
-                            <li><a class="pgn__num" href="#0">3</a></li>
-                            <li><a class="pgn__num" href="#0">4</a></li>
-                            <li><a class="pgn__num" href="#0">5</a></li>
-                            <li><span class="pgn__num dots">…</span></li>
-                            <li><a class="pgn__num" href="#0">8</a></li>
-                            <li>
-                                <span class="pgn__next" href="#0">
-                                    Next
-                                </span>
-                            </li>
-                        </ul>
-                    </nav> <!-- end pgn -->
-                </div> <!-- end column -->
-            </div> <!-- end row -->
+            <h5>Resume</h5>
+            <h1>More of my credentials.</h1>
 
-        </div> <!-- end s-bricks -->
+            <p class="lead">Here are my work experiences and education.</p>
 
-    </section> <!-- end s-content -->
+         </div>  
+      </div><!-- /section-intro -->
+
+      <!-- Work experience 
+      ----------------------------------------------- -->
+      <div class="row resume-timeline">
+
+         <div class="col-twelve resume-header">
+
+            <h2>Work Experience</h2>
+
+         </div> <!-- /resume-header -->
+
+         <div class="col-twelve">
+
+            <div class="timeline-wrap">
+
+               <div class="timeline-block"> 
+
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>Software Engineer</h3>
+                     <p>June 2020 - September 2020</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4><a href="https://www.invitae.com/en/" target="_blank">Invitae</a></h4>
+                     <p> Prospective software engineer working to automate variant calling in human genetics analysis. 
+                     </p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
 
 
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
+               <div class="timeline-block"> 
 
-        <div class="s-footer__main">
-            <div class="row">
-                <div class="column large-7 medium-6 tab-12 s-footer__info">
-                    
-                    <h5>(주)원스드림</h5>
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
 
-                    <p>
-                    대표 윤소연 | 개인정보관리책임자 ________ | 사업자등록번호 
-                    </p>
+                  <div class="timeline-header">
+                     <h3>Bioinformatics Intern</h3>
+                     <p>June 2019 - September 2019</p>
+                  </div>
 
-                </div> 
+                  <div class="timeline-content">
+                     <h4>Genentech</h4>
+                     <p> Worked in proteomics department under R&D. Created web data analysis & visualization for MS based proteomics using python pyramid server & typescript client. Ran high throughput computation analysis through Spotfire, R, and SQL queries. Was selected for Genentech Leader Intern Exchange program (gLINX) and mentored by senior VP executive
+                     </p>
+                  </div>
 
-                <div class="column large-3 medium-6 tab-12 s-footer__info">
+               </div> <!-- /timeline-block -->
 
-                    <h5>Site Links</h5>
+               <div class="timeline-block"> 
 
-                    <ul>
-                        <li><a href="#0">블로그</a></li>
-                        <li><a href="#0">전화번호</a></li>
-                        <li><a href="#0">이용약관</a></li>
-                    </ul>
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
 
-                </div> 
+                  <div class="timeline-header">
+                     <h3>Software Engineer</h3>
+                     <p>August 2018 - September 2018</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4><a href="https://streami.co" target="_blank">Streami Inc.</a></h4>
+                     <p> Worked in blockchain company. Performed network performance test between AWS centers located in Asia. Created GOPAX API monitoring tool that would test GOPAX API, create error digest, then would send email alert. Studied zcash transaction after Overwinter Hardfolk.
+                     </p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+               <div class="timeline-block"> 
+
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>Research Intern</h3>
+                     <p>June 2018 - August 2018</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>Google's Code for Summer 2018</h4>
+                     <p>Updated python package called DNAplotlib, a project under National Resource for Network Biology. Integrated pySBOL2 which supports hierarchical and complex interaction visualizion of synthetic biocircuits. Rendered Synthetic Biology Open Language (SBOL) visual standard glyph in python. More details in 
+                     <a href="#portfolio" title="projects" class="smoothscroll">projects</a>
+                     </p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+               <div class="timeline-block">
+
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>Founder/App developer</h3>
+                     <p>March 2018 - June 2018</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>DoctorMi</h4>
+                     <p>Developed iOS app called DoctorMi that visualizes user health diagnosis data based on breath analysis. Supports features such as daily health data check, real time breath analysis, looking at other health data, and sharing health data by email. Originally a final project for the class CS193P. More details in 
+                     <a href="#portfolio" title="projects" class="smoothscroll">projects</a>
+                  </p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+               <div class="timeline-block">
+
+                  <div class="timeline-ico">
+                     <i class="fa fa-briefcase"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>Founder/Front-end Developer</h3>
+                     <p>March 2017 - October 2017</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>Startup Dotsaway Inc.</h4>
+                     <p>Built user chat system based on Django channel package and websockets. Created print itinerary page for the outdoor trekking route using javascript, css, and html programing. Developed web pages to enhance user experience, reached out to Stanford student orgs for user testing. More details in 
+                     <a href="#portfolio" title="projects" class="smoothscroll">projects</a>
+                  </p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+            </div> <!-- /timeline-wrap -->            
+
+         </div> <!-- /col-twelve -->
+         
+         <div class="col-twelve resume-header">
+
+            <h2>Background Education</h2>
+
+         </div> <!-- /resume-header -->
+
+         <div class="col-twelve">
+
+            <div class="timeline-wrap">
+
+               <div class="timeline-block">
+
+                  <div class="timeline-ico">
+                     <i class="fa fa-pencil"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>Bachelor Degree</h3>
+                     <p>September 2016 - June 2020</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>Stanford University</h4>
+                     <p>Founded the club Stanford Transhumanist Association. Former webmaster for Sigma Psi Zeta, former club director for Stanford Biology Open Maker Environment.</p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+               <div class="timeline-block">
+
+                  <div class="timeline-ico">
+                     <i class="fa fa fa-pencil"></i>
+                  </div>
+
+                  <div class="timeline-header">
+                     <h3>High School Degree</h3>
+                     <p>March 2010 - March 2016</p>
+                  </div>
+
+                  <div class="timeline-content">
+                     <h4>Cheongshim International Academy</h4>
+                     <p>Graduated with Egregia Cum Laude. Received merit based scholarship twice. Won Second Prize in Intel International Science Fair. Recognized as the top ten student researcher. Founded charity fund raising club Jo Quak Bo, volunteered school librarian duty for six years.</p>
+                  </div>
+
+               </div> <!-- /timeline-block -->
+
+            </div> <!-- /timeline-wrap -->            
+
+         </div> <!-- /col-twelve -->
+         
+      </div> <!-- /resume-timeline -->
+   </section>
+
+
+      
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+      <div class="row section-intro">
+         <div class="col-twelve">
+
+            <h5>Projects</h5>
+            <h1>Check out my creations.</h1>
+
+         </div>  
+      </div><!-- /section-intro -->
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/DoctorMi.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>DoctorMi</h5>
+                              <p>Health App</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/dnaplotlib.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>dnaplotlib</h5>
+                              <p>python visualization package</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/dotsaway.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Dotsaway</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/sift.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>SIFT</h5>
+                              <p>Disease diagnosis from HB</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/website.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Personal Website</h5>
+                              <p>Web Development</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/syz.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Sigma Psi Zeta</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/jellyfish.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Jellyfish Adsorbent</h5>
+                              <p>Researcher & Developer</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/ecig.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Ecig Analysis</h5>
+                              <p>PCA Analysis of Ecig MS</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-DoctorMi.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>DoctorMi</h4>
+			      <p>iOS app that displays user health diagnosis info from breath analysis. Included features are daily info display, display option customization, showing other's info, and sharing one's health info.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Swift, Xcode, iOS development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/swkang73/DoctorMi" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
             </div>
-        </div>
 
-        <div class="s-footer__bottom">
-            <div class="row">
-                <div class="column">
-                    <div class="ss-copyright">
-                        <span>© Copyright 원스드림 2020</span> 
-                        <span>Adopted Design Calvin from <a href="https://www.styleshout.com/">StyleShout</a></span>
-                    </div> <!-- end ss-copyright -->
-                </div>
-            </div> 
+	      </div><!-- modal-01 End -->
 
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
-                </a>
-            </div> <!-- end ss-go-top -->
-        </div> <!-- end s-footer__bottom -->
+         <div id="modal-02" class="popup-modal mfp-hide">
 
-   </footer> <!-- end s-footer -->
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-dnaplotlib.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>dnaplotlib</h4>
+			      <p>Python package for visualizing genetic circuits. Updated the package to support rendering Synthetic Biology Open Visual 2 glyphs & visualization of non-dna components. Picture credit: 
+                  <a href="http://www.lavanguardia.com/ciencia/20170302/42478152571/sistema-opeativo-frasco-adn.html" target="_blank">lavanguardia news</a></p>
+               <span class="categories"><i class="fa fa-tag"></i>python, synthetic biology, Google, Code for Summer</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/swkang73/dnaplotlib" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-dotsaway.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Dotsaway</h4>
+			      <p>Startup for providing trekking route customized for user's outdoor experience level, fitness, weather, and view. Built user chat platform & final route popup box</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, front-end development, javascript, css, html</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.facebook.com/profile.php?id=100009680869808" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-sift.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>SIFT</h4>
+			      <p>PCA analysis of Human Breath (HB) measured through Selected Ion Flow Tube-Mass Spectroscopy. Visualization of differences between individual breath through dimension reduction. Research in Gross Lab, Stanford Medical Center</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/swkang73/sift" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-website.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Personal Website</h4>
+			      <p>Created own personal website for showing resume. Merged Ceeve and Kard platform from Styleshout. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, javascript, css, html</span>
+		      </div>
+
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-syz.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Sigma Psi Zeta Website</h4>
+			      <p>Updated website for Omicron Stanford Charter, Sigma Psi Zeta (SYZ). SYZ is the biggest Asian-interest sorority on campus. User traffic doubled during my time of development</p>
+               <span class="categories"><i class="fa fa-tag"></i>Web development, blog, activisim, asian-interest</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://stanfordsyz.weebly.com/" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-jellyfish.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Jellyfish Heavy Metal Adsorbent</h4>
+			      <p>Three years of wetlab research on developing novel heavy metal adsorbent out of jellyfish Chondroitin Sulfate. Patented on 2016, recognized with second place in Intel ISEF 2015.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Biology, wetlab, patent</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.societyforscience.org/content/press-room/intel-isef-2015-grand-award-winners" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-ecig.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>E-cigarette analysis</h4>
+			      <p>Analyzed different e-cigarettes chemicals through processing mass spectra data. Research in Gross Lab, Stanford Medical Center</p>
+               <span class="categories"><i class="fa fa-tag"></i>Mass Spectroscopy, research, python, data analysis</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/swkang73/ecig" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-08 End -->
 
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+   <!-- activities Section
+   ================================================== -->
+   <section id="activities">
+
+      <div class="overlay"></div>
+
+      <div class="row section-intro">
+         <div class="col-twelve">
+
+            <h5>Activities</h5>
+            <h1>My positions during undergraduate.</h1>
+
+            <p class="lead">Summary of my leadership & extracurricular activities</p>
+
+         </div>         
+      </div> <!-- /section-intro -->
+
+      <div class="row activity">
+
+         <div class="twelve columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Founder/Co-President</h3>
+                  <p class="info">Stanford Transhumanist Association<span>&bull;</span> <em class="date">March 2018 - Present</em></p>
+
+                  <p>
+                  Organized executive board members & meeting. <br>
+                  Designed STA discussion event posters. <br>
+                  Took record of STA meeting & discussion. <br>
+                  Recruited Stanford students into club members. 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Webmaster</h3>
+                  <p class="info">Omicron Charter, Sigma Psi Zeta<span>&bull;</span> <em class="date">January 2018 - Present </em></p>
+
+                  <p>
+                  Ran homepage for the biggest Asian interest sorority in campus. <br>
+                  Publicized the organization's activity, redesigned user interface that doubled website traffic.<br>
+                  <a href="https://stanfordsyz.weebly.com/" target="_blank">Sigma Psi Zeta</a>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Student Associate</h3>
+                  <p class="info">Lane Library, Stanford Medical Center<span>&bull;</span> <em class="date">March 2018 - Present</em></p>
+
+                  <p>
+                  Helped manage 10000+ books through returning, lending, and shelving books. <br>
+                  Assisted library users at the front desk. <br>
+                  Participated in library user statistics through Google Docs. 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Community Director</h3>
+                  <p class="info">Biology Interdisplinary Open Maker Environment, Stanford<span>&bull;</span> <em class="date">March 2003</em></p>
+
+                  <p>
+                  Fostered bioengineering community on campus through designing club tshirt. <br>
+                  Organized the first Stanford Bioengineering Hackathon supported by Genspace, Opentrons, FBI, and other biotech companies<br>
+                  <a href="https://stanfordbiome.org/" target="_blank">BIOME</a>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Center player</h3>
+                  <p class="info">Stanford Intramural Women Basketball Team<span>&bull;</span> <em class="date">September 2016 - March 2017</em></p>
+
+                  <p>
+                  Participated in rigorous basketball training twice every week. <br>
+                  Played in varsity basketball team during high school. 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+      
+   </section> <!-- /activities --> 
+
+
+   <!-- stats Section
+   ================================================== -->
+   <section id="stats" class="count-up">
+
+      <div class="row">
+         <div class="col-twelve">
+
+            <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-file"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     200+
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Projects Completed
+                  </h5>
+
+               </div> <!-- /stat -->               
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-trophy"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     10
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Awards Received
+                  </h5>
+
+               </div> <!-- /stat -->                           
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-magic"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     100+
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Crazy Ideas
+                  </h5>
+
+               </div> <!-- /stat -->
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-code"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     1000+
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Hours Coding
+                  </h5>
+
+               </div> <!-- /stat -->
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-globe"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     930+
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Network
+                  </h5>
+
+               </div> <!-- /stat -->
+
+               <div class="bgrid stat">
+
+                  <div class="icon-part">
+                     <i class="fa fa-book"></i>
+                  </div>
+
+                  <h3 class="stat-count">
+                     1000+
+                  </h3>
+
+                  <h5 class="stat-title">
+                     Books read
+                  </h5>
+
+               </div> <!-- /stat -->
+
+            </div> <!-- /stats-list -->
+
+         </div> <!-- /twelve -->
+      </div> <!-- /row -->
+
+   </section> <!-- /stats -->
+
+
+   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-intro">
+         <div class="col-twelve">
+
+            <h5>Contact</h5>
+            <h1>I'd Love To Connect With You.</h1>
+
+            <p class="lead">Let me get to know more about you.</p>
+
+         </div> 
+      </div> <!-- /section-intro -->
+
+      <div class="row contact-info">
+
+         <div class="col-four tab-full">
+
+            <div class="icon">
+               <i class="fa fa-location-arrow"></i>
+            </div>
+
+            <h5>Where to find me</h5>
+
+            <p>
+            531 Lasuen Mall<br>
+            Stanford, CA<br>
+            94305 US
+            </p>
+
+         </div>
+
+         <div class="col-four tab-full collapse">
+
+            <div class="icon">
+               <i class="icon-mail"></i>
+            </div>
+
+            <h5>Email Me At</h5>
+
+            <p>swkang73@stanford.edu<br>         
+            </p>
+
+         </div>
+	      
+	 <div class="col-four tab-full collapse">
+
+            <div class="icon">
+               <i class="fa fa-linkedin"></i>
+            </div>
+
+            <h5>Let's Connect</h5>
+            <a href="https://www.linkedin.com/in/sunwoo-kang-730/" target="_blank">LinkedIn Profile</a>
+
+         </div>
+         
+      </div> <!-- /contact-info -->
+      
+   </section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="copyright">
+               <li>Edit by Sunwoo Kang</li>
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
 
