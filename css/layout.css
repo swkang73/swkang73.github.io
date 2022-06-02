@@ -172,6 +172,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    top: 0;
 }
 .opaque { background-color: #333; }
+.banner__text { text-transform: none; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -212,6 +213,30 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
+.banner__content {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  position: relative;
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.banner__text,
+.banner__close > span {
+  color: #ffffff;
+  position: relative;
+}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
